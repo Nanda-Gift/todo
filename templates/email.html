@@ -1,0 +1,12 @@
+{% include "home.html" %}
+{% for give in gives %}
+
+<li>
+  
+  {{give.email}}
+  <a href="{% url 'delete' give.id %}"><button type="submit" class="btn btn-primary mb-3">Delete</button></a>
+</li>
+
+
+
+{% endfor %}
